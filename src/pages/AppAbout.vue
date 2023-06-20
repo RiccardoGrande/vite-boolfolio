@@ -5,10 +5,23 @@
 
 <template>
     <section>
-        <h1 class="mt-5 mb-3">Abouts</h1>
+        <div class="container">
+            <div class="row">
+                <h1 class="mt-5 mb-3">About Me</h1>
+
+                <div>I have learn to use this technologies.</div>
+            </div>
+        </div>
+
+
+
     </section>
 </template>
 
 
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.row {
+    color: white;
+}
+</style>
