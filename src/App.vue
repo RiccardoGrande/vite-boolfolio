@@ -18,7 +18,6 @@ export default {
     </video>
     <AppHeader></AppHeader>
     <AppJumbo></AppJumbo>
-    <router-view></router-view>
 </template>
 
 <style lang="scss">
