@@ -1,69 +1,37 @@
 <script>
-import axios from 'axios';
+import AppHeader from './components/AppHeader.vue'
+import AppJumbo from './components/AppJumbo.vue'
 
 export default {
     components: {
 
-    },
-    data() {
-        return {
-            loading: true,
-            projects: null,
-            base_url: 'http://127.0.0.1:8000/',
-            projects_path: 'api/projects',
-            error: null
-        }
-    },
-    methods: {
-        getProjects(url) {
-
-            axios.get(url)
-                .then(response => {
-                    console.log(response);
-                    this.projects = response.data.projects
-                    this.loading = false
-                })
-                .catch(error => {
-                    console.log(error);
-                    this.error = error.message
-                })
-        }
-    },
-    mounted() {
-
-        const url = this.base_url + this.projects_path
-        this.getProjects(url)
-
+        AppHeader,
+        AppJumbo
     }
-
 }
-
 </script>
 
 <template>
-    <router-view></router-view>
-    <router-view></router-view>
-    <router-view></router-view>
-    <h1>My Projects</h1>
-    <section class="projects">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="card" v-for="project in projects">
-                        <img class="card-img-top" src="" alt="">
-                        <div class="card-body">
-                            <h3>{{ project.title }}</h3>
-                            <p>{{ project.content }}</p>
-                        </div>
+    <video id="background-video" autoplay muted loop>
+        <source src="./assets/pexels-engin-akyurt-2963870-3840x2160-25fps.mp4" type="video/mp4">
 
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
+    </video>
+    <AppHeader></AppHeader>
+    <AppJumbo></AppJumbo>
+    <router-view></router-view>
 </template>
 
 <style lang="scss">
 @use './styles/general.scss';
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
 </style>
