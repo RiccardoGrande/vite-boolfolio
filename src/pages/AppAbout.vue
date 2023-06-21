@@ -9,10 +9,10 @@
             <div class="row">
                 <h1 class="about_me mt-5 mb-3">About Technologies</h1>
 
-                <div class="technologies">I have learned to use this technologies.</div>
+                <h3 class="technologies">I have learned to use this technologies.</h3>
 
             </div>
-            <div class="row">
+            <div class="row mt-2">
                 <div class="col ">
                     <div class="card bg-dark" style="width: 18rem;">
                         <img src="../assets/img/html-5.svg" class="card-img-top" alt="html_logo">
@@ -55,7 +55,7 @@
                 </div>
                 <div class="col">
                     <div class="card bg-dark" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="../assets/img/php.svg" class="card-img-top" alt="php">
                         <div class="card-body">
                             <p class="card-text text-light">PHP</p>
                         </div>
@@ -63,13 +63,24 @@
                 </div>
                 <div class="col">
                     <div class="card bg-dark" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="../assets/img/mysql.svg" class="card-img-top" alt="mysql">
                         <div class="card-body">
                             <p class="card-text text-light">MySQL</p>
                         </div>
                     </div>
                 </div>
+                <div class="col">
+                    <div class="card bg-dark" style="width: 18rem;">
+                        <img src="../assets/img/laravel.svg" class="card-img-top" alt="mlaravel">
+                        <div class="card-body">
+                            <p class="card-text text-light">Laravel</p>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+            <div class="row p-3">
+                <h2 class="about_me">Waiting to add more !</h2>
             </div>
         </div>
 
@@ -91,5 +102,9 @@
 
 .technologies {
     font-family: 'Play', sans-serif;
+}
+
+.col {
+    padding-top: 1rem;
 }
 </style>
