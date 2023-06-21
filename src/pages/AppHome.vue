@@ -2,10 +2,7 @@
 import axios from 'axios';
 
 export default {
-    components: {
-
-
-    },
+    name: "AppHome",
     data() {
         return {
             loading: true,
@@ -46,7 +43,7 @@ export default {
     <section class="projects">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col" v-if="projects">
                     <div class="card" v-for="project in projects">
                         <img class="card-img-top" src="" alt="">
                         <div class="card-body">
