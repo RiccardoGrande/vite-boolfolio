@@ -40,7 +40,7 @@ export default {
 }
 
 p {
-    font-family: 'Bebas Neue', sans-serif;
+
     font-family: 'Play', sans-serif;
 }
 </style>
